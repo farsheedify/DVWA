@@ -22,7 +22,7 @@ jobs:
     # Step 3: Run Semgrep scan on all files and output to a JSON file
     - name: Run Semgrep scan
       run: |
-        semgrep scan --config "p/r2c-security-audit" --config "p/owasp-top-ten" --config "p/security-audit" --config "p/cwe-top-25" --json-output=semgrep.json
+        semgrep scan --config "p/r2c-security-audit" --config "p/owasp-top-ten" --config "p/security-audit" --config "p/cwe-top-25" --json-output=semgrep-report.json
 
     # Step 4: Upload the Semgrep report as an artifact
     - name: Upload Semgrep report
